@@ -1082,10 +1082,26 @@ plt.grid(True)
 plt.show()
 
 
-# In[ ]:
+# In[44]:
 
 
+import matplotlib.pyplot as plt
 
+plt.figure(figsize=(10, 6))
+
+# Graficar los datos de temperatura_proyectada2 (proyecciones)
+plt.plot(temperatura_proyectada2['Año'], temperatura_proyectada2['Temperatura_Media'], label='Proyecciones', marker='d', linestyle='-',color = 'orange' )
+plt.bar(temperatura_escenario2['Año'], temperatura_escenario2['Temperatura_Media'], label='Escenarios', alpha=0.7, color = 'green')
+
+plt.xlabel('Año', color = 'black')
+plt.ylabel('Temperatura Media', color = 'black')
+plt.title('Temperatura Proyecciones / Temperatura Escenarios', color = 'black')
+plt.legend(bbox_to_anchor=(0.25, 0.85))
+
+plt.ylim(17.75, 20.2)
+
+plt.grid(True)
+plt.show()
 
 
 # In[ ]:
