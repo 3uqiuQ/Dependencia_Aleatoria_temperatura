@@ -1,4 +1,4 @@
-# Exercici_Projecte
+# Projecte Variació Temperatura
 
 Variación de la Temperatura Global
 
